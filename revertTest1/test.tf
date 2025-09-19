@@ -1,10 +1,10 @@
-  records = []
-
-  aliases = [
+  records = [
     {
-      name           = "test.ablog"
-      type           = "A"
-      target_name    = "YYYYY.cloudfront.net"
-      target_zone_id = "Z2FDTNDATAQYW2"
+      name   = "test.ablog"
+      type   = "CNAME"
+      values = ["XXX.elb.amazonaws.com."]
+      ttl    = 60
     },
   ]
+
+  aliases = []
